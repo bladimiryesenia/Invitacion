@@ -667,41 +667,6 @@ section .section-inner > button.btn {
   <source src="https://github.com/billarmilestrellas-star/Invitacion/raw/refs/heads/main/Andr%C3%A9s%20Cepeda%20-%20Por%20el%20Resto%20de%20mi%20Vida%20-%20Audio.mp3" type="audio/mpeg">
 </audio>
 
-  <script>
-document.addEventListener("DOMContentLoaded", async () => {
-  const audio = document.getElementById("musica");
-  const btn = document.getElementById("btnMusica");
-
-  audio.volume = 0.8;
-
-  // Detectar si es Apple
-  const esIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
-
-  if (!esIOS) {
-    try {
-      await audio.play();
-      btn.textContent = "⏸️"; // cambia el botón
-    } catch (e) {
-      console.log("Autoplay bloqueado, intentando desbloquear…");
-    }
-  } else {
-    // iOS siempre bloquea autoplay
-    btn.textContent = "▶️";
-  }
-
-  // BOTÓN MANUAL
-  btn.addEventListener("click", async () => {
-    if (audio.paused) {
-      await audio.play();
-      btn.textContent = "⏸️";
-    } else {
-      audio.pause();
-      btn.textContent = "▶️";
-    }
-  });
-});
-</script>
-
   
 
 <!-- BOTÓN FLOTANTE -->
@@ -1122,29 +1087,37 @@ document.addEventListener("DOMContentLoaded", async function () {
 </script>
 
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const hint = document.getElementById("hintMusica");
-  const btn = document.getElementById("btnMusica");
+document.addEventListener("DOMContentLoaded", function () {
+    const audio = document.getElementById("musica");
+    const btn = document.getElementById("btnMusica");
 
-  if (!hint || !btn) return;
+    audio.volume = 0.9;
 
-  // función para esconder la pista
-  const ocultarHint = () => {
-    if (!hint) return;
-    hint.classList.add("fade-out-hint");
-    // la removemos del DOM después de la animación
-    setTimeout(() => {
-      if (hint && hint.parentNode) {
-        hint.parentNode.removeChild(hint);
-      }
-    }, 450);
-  };
+    // detectar iPhone/iPad
+    const esIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
-  // Si el usuario toca el botón de música, se esconde la flecha
-  btn.addEventListener("click", ocultarHint);
+    // Autoplay solo fuera de iOS
+    if (!esIOS) {
+        audio.play().then(() => {
+            btn.textContent = "⏸️";
+        }).catch(err => {
+            console.log("Autoplay bloqueado:", err);
+            btn.textContent = "▶️";
+        });
+    } else {
+        btn.textContent = "▶️";
+    }
 
-  // También se esconde sola después de unos segundos
-  setTimeout(ocultarHint, 9000); // 9 segundos
+    // CONTROL DEL BOTÓN
+    btn.addEventListener("click", () => {
+        if (audio.paused) {
+            audio.play();
+            btn.textContent = "⏸️";
+        } else {
+            audio.pause();
+            btn.textContent = "▶️";
+        }
+    });
 });
 </script>
 
@@ -1264,4 +1237,5 @@ document.addEventListener("DOMContentLoaded", () => {
 </div>
 </body>
 </html>
+
 

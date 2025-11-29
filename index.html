@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invitación de Boda - Bladimir & Yesenia</title>
+
+<!-- Vista previa para WhatsApp, Facebook y redes -->
+<meta property="og:title" content="Invitación de Boda — B & Y — ">
+<meta property="og:description" content="Nos casamos. Acompáñanos en este día tan especial ❤️">
+<meta property="og:image" content="https://uploads.onecompiler.io/445r4svta/445r45x9w/IMG_0026.jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yeseniaybladimir.oneapp.dev/">
+
+
+<!-- Tipografías elegantes -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Lora:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --verde-manzana: #8fd18a;
+  --verde-oscuro: #4e8b4b;
+  --beige-suave: #fff8ef;
+  --texto: #333;
+}
+
+/* BOTÓN FLOTANTE ELEGANTE */
+.music-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: var(--verde-manzana);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+  z-index: 999;
+  transition: 0.25s;
+}
+
+.music-btn:hover {
+  background: var(--verde-oscuro);
+  transform: scale(1.08);
+}
+
+.music-btn:active {
+  transform: scale(0.96);
+}
+
+
+.hero-title {
+  color: #f6e9b9;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.4);
+}
+
+.hero-subtitle,
+.hero-date {
+  color: #fff9d9;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+
+/* ----------------------------- */
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lora", serif;
+  background: white;
+  color: var(--texto);
+}
+
+/* ----------------------------- */
+/* TOPBAR */
+.topbar {
+  background: white;
+  padding: 12px 20px;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.topbar-inner {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 22px;
+  font-family: "Playfair Display";
+  font-weight: 600;
+  color: var(--verde-oscuro);
+}
+
+nav a {
+  margin-left: 12px;
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--texto);
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: var(--verde-oscuro);
+}
+
+/* ----------------------------- */
+/* HERO */
+.hero {
+  position: relative;
+  height: 85vh;
+  background: url("https://uploads.onecompiler.io/445r4svta/445r45x9w/IMG_0026.jpeg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.45);
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 30px;   /* 👈 Ajusta la distancia del borde inferior */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 20px;
+  z-index: 2;
+}
+
+
+.hero-subtitle {
+  text-transform: uppercase;
+  letter-spacing:3px;
+  font-size:15px;
+  opacity:.9;
+}
+
+.hero-title {
+  font-family:"Playfair Display";
+  margin:10px 0;
+  font-size:48px;
+}
+
+.hero-date {
+  margin-top:8px;
+  font-size:18px;
+}
+
+/* ----------------------------- */
+/* SECCIONES */
+.section {
+  padding:70px 20px;
+}
+
+.section-alt {
+  background: var(--beige-suave);
+  padding: 70px 20px 100px;
+}
+
+.section-inner {
+  max-width:850px;
+  margin:auto;
+  text-align:center;
+}
+
+.section-title {
+  font-size:30px;
+  color:var(--verde-oscuro);
+  font-family:"Playfair Display";
+  margin-bottom:8px;
+}
+
+.section-subtitle {
+  font-size:15px;
+  color:#666;
+}
+
+.texto {
+  font-size:17px;
+  line-height:1.7;
+  color:#444;
+  max-width:750px;
+  margin:auto;
+  margin-bottom:20px;
+}
+
+/* ----------------------------- */
+/* SEPARADOR FLORAL */
+.separator {
+  width:120px;
+  margin:25px auto;
+  opacity:0.75;
+}
+
+/* ----------------------------- */
+/* VERSÍCULO */
+.versiculo-box {
+  background: #fffdf8;  /* tono pergamino claro */
+  padding: 28px 32px;
+  border-radius: 14px;
+
+  /* Borde estilo pergamino */
+  border: 1.8px solid rgba(218, 185, 130, 0.75);
+
+  /* Textura suave */
+  box-shadow:
+    inset 0 0 22px rgba(210,180,120,0.20),
+    0 6px 18px rgba(0,0,0,0.12);
+
+  /* Ligeros rasgados simulados */
+  position: relative;
+  font-style: italic;
+  max-width: 800px;
+  margin: 38px auto;
+  color: #4c4c4c;
+  line-height: 1.6;
+}
+
+
+/* ----------------------------- */
+/* CONTADOR */
+.contador {
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:15px;
+  margin-top:25px;
+}
+
+.cont-item {
+  background:white;
+  width:90px;
+  padding:14px;
+  border-radius:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.12);
+}
+
+.cont-num {
+  font-size:22px;
+  font-weight:bold;
+  color:var(--verde-oscuro);
+}
+
+/* Animación para el gran día */
+.gran-dia {
+  animation: aparecer 1.6s ease-out forwards;
+  opacity: 0;
+  transform: scale(0.85);
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Fondo dorado */
+.fondo-dorado {
+  background: linear-gradient(135deg, #f7e7b4, #f1d68a, #f9eac3);
+  transition: background 1.5s ease-in-out;
+}
+
+/* ----------------------------- */
+/* BOTÓN */
+.btn {
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 30px;
+  background:var(--verde-manzana);
+  color:white;
+  border-radius:999px;
+  text-decoration:none;
+  font-size:15px;
+  font-weight:600;
+  transition:0.2s;
+  border:none;
+}
+
+.btn:hover {
+  background:var(--verde-oscuro);
+}
+
+/* ----------------------------- */
+/* ITINERARIO */
+.itinerario {
+  list-style:none;
+  padding:0;
+  margin-top:20px;
+}
+
+.itinerario li {
+  display:flex;
+  justify-content:space-between;
+  padding:8px 0;
+  border-bottom:1px dashed #bbb;
+}
+
+.it-hora {
+  font-weight:bold;
+  color:var(--verde-oscuro);
+}
+
+/* ----------------------------- */
+/* MAPA */
+.mapa-frame {
+  width:100%;
+  max-width:750px;
+  height:330px;
+  border:0;
+  border-radius:12px;
+  margin:25px auto;
+  display:block;
+  box-shadow:0 6px 16px rgba(0,0,0,0.2);
+}
+
+/* Ocultar contador con fade-out */
+.fade-out {
+  animation: fadeOut 1.6s ease forwards;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(15px); }
+}
+
+/* Efecto brillante sobre el texto del gran día */
+.brillo {
+  position: relative;
+  overflow: hidden;
+}
+
+.brillo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.6) 50%, transparent 100%);
+  animation: shine 2.2s ease-in-out forwards;
+}
+
+@keyframes shine {
+  0% { left: -120%; }
+  100% { left: 120%; }
+}
+
+/* Pétalos dorados */
+.petalo {
+  position: fixed;
+  width: 14px;
+  height: 14px;
+  background: #f2d283;
+  border-radius: 50% 50% 60% 40%;
+  opacity: 0.9;
+  animation: caer linear forwards;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+@keyframes caer {
+  0% {
+    transform: translateY(-20vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* MARCO DORADO PREMIUM */
+.marco-dorado {
+  border: 6px solid #e7d9a8;
+  border-radius: 14px;
+  padding: 4px;
+  background: linear-gradient(145deg, #f8efd3, #e9d7a0);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+/* MARCO BRILLANTE DE LUJO */
+.marco-brillante {
+  border-radius: 14px;
+  padding: 6px;
+  background: linear-gradient(135deg, #f7dcb2, #fff3d4, #e9c985);
+  box-shadow: 0 0 20px rgba(255, 230, 180, 0.5);
+}
+
+/* MARCO CLÁSICO FINO */
+.marco-clasico {
+  border-radius: 14px;
+  padding: 3px;
+  border: 2px solid rgba(0,0,0,0.15);
+  background: white;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+}
+
+/* PISTA PARA EL REPRODUCTOR */
+.hint-music {
+  position: fixed;
+  /* un poco encima del botón de música (que está en bottom: 25px) */
+  bottom: 90px;
+  right: 25px;
+  background: rgba(0,0,0,0.78);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+  z-index: 998;
+  animation: hintIn 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.hint-music .hint-arrow {
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* animación de entrada suave */
+@keyframes hintIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* animación para esconder la pista */
+.fade-out-hint {
+  animation: hintOut 0.4s ease-in forwards;
+}
+
+@keyframes hintOut {
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(8px); }
+}
+
+
+/* ----------------------------- */
+/* FOOTER */
+footer {
+  background:#f3f7f3;
+  text-align:center;
+  padding:30px;
+  font-size:14px;
+  margin-top:40px;
+}
+
+/* ----------------------------- */
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .hero-title {
+    font-size:32px;
+  }
+  .hero-date {
+    font-size:16px;
+  }
+  nav {
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+  }
+  nav a {
+    margin-left:0;
+    font-size:13px;
+  }
+}
+
+/* Centrar solo el botón verde de Google Maps */
+section .section-inner > button.btn {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Botón minimalista para compartir */
+.share-btn {
+  background: none;
+  border: 1.5px solid #c5a46d;
+  color: #c5a46d;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-left: 14px;
+}
+
+.share-btn:hover {
+  background: #c5a46d;
+  color: white;
+  transform: scale(1.05);
+}
+
+
+/* Fondo oscuro */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(3px);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Caja */
+.modal-box {
+  background: white;
+  width: 90%;
+  max-width: 350px;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  animation: aparecerModal 0.25s ease;
+}
+
+/* Animación */
+@keyframes aparecerModal {
+  from { transform: scale(0.85); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+/* Título */
+.modal-title {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #c5a46d;
+  font-weight: bold;
+}
+
+/* Texto */
+.modal-text {
+  color: #555;
+  font-size: 15px;
+}
+
+/* Input */
+.modal-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* Botones modal */
+.modal-confirm, .modal-cancel {
+  margin-top: 15px;
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.modal-confirm {
+  background: #c5a46d;
+  color: white;
+}
+
+.modal-cancel {
+  background: #eee;
+  color: #555;
+}
+
+.modal-result {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #333;
+  word-wrap: break-word;
+}
+
+.titulo-casamos {
+  font-family: "Playfair Display", serif;
+  font-size: 33px;
+  font-weight: 600;
+  color: #d4b574; /* dorado fino */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.titulo-casamos::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #d4b574, transparent);
+  margin: 12px auto 0;
+  border-radius: 10px;
+}
+
+/* FINAL ÉPICO — SIN ANIMACIÓN */
+.final-epico {
+  margin-top: 60px;
+  padding: 40px 25px;
+  text-align: center;
+  background: linear-gradient(135deg, #fff7e6, #fff3d9);
+  border-top: 2px solid #e8d099;
+  border-bottom: 2px solid #e8d099;
+  font-family: "Playfair Display", serif;
+}
+
+.final-epico h3 {
+  font-size: 26px;
+  color: #b58b2a;
+  margin: 0;
+  font-weight: 600;
+}
+
+.final-epico p {
+  font-size: 15px;
+  color: #6d5f3a;
+  margin-top: 8px;
+  opacity: .85;
+}
+
+
+
+
+</style>
+</head>
+<body>
+  
+  
+  
+  <!-- AUDIO (sin autoplay para que iOS no lo bloquee) -->
+<audio id="musica" preload="auto">
+  <source src="https://github.com/billarmilestrellas-star/Invitacion/raw/refs/heads/main/Andr%C3%A9s%20Cepeda%20-%20Por%20el%20Resto%20de%20mi%20Vida%20-%20Audio.mp3" type="audio/mpeg">
+</audio>
+
+<!-- BOTÓN FLOTANTE -->
+<div id="btnMusica" class="music-btn" title="Reproducir / Pausar música">▶️</div>
+<!-- PISTA PARA EL REPRODUCTOR -->
+<div id="hintMusica" class="hint-music">
+  Toca aquí para escuchar 💛
+  <span class="hint-arrow">⤵️</span>
+</div>
+
+
+
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">Bladimir & Yesenia</div>
+    <nav>
+      <a href="#historia">Historia</a>
+      <a href="#contador">Fecha</a>
+      <a href="#ceremonia">Ceremonia</a>
+      <a href="#ubicacion">Ubicación</a>
+      <a href="#rsvp">Confirmar</a>
+      <button id="btnCompartir" class="share-btn">📩</button>
+    </nav>
+  </div>
+</header>
+
+<!-- Modal para personalizar invitación -->
+<div id="modalInvitado" class="modal-overlay">
+  <div class="modal-box">
+    <h3 class="modal-title">Personalizar invitación</h3>
+    <p class="modal-text">¿A quién deseas enviar esta invitación?</p>
+
+    <input type="text" id="inputNombre" class="modal-input" placeholder="Ej: Ana Martínez">
+
+    <button class="modal-confirm">Generar enlace</button>
+    <button class="modal-cancel">Cancelar</button>
+
+    <p id="resultadoLink" class="modal-result"></p>
+  </div>
+</div>
+  
+<script>
+function getBaseURL() {
+  return window.location.origin + window.location.pathname;
+}
+
+// Abrir modal
+document.getElementById("btnCompartir").addEventListener("click", () => {
+  document.getElementById("modalInvitado").style.display = "flex";
+});
+
+// Cancelar
+document.querySelector(".modal-cancel").addEventListener("click", () => {
+  document.getElementById("modalInvitado").style.display = "none";
+});
+
+// Generar enlace personalizado
+document.querySelector(".modal-confirm").addEventListener("click", () => {
+  const nombre = document.getElementById("inputNombre").value.trim();
+
+  if (!nombre) {
+    alert("Por favor escribe un nombre.");
+    return;
+  }
+
+  const encoded = encodeURIComponent(nombre);
+  const link = getBaseURL() + "?para=" + encoded;
+
+  // Mostrar link
+  const result = document.getElementById("resultadoLink");
+  result.innerHTML = "Enlace generado:<br><b>" + link + "</b>";
+
+  // Copiar automáticamente
+  navigator.clipboard.writeText(link);
+
+  result.innerHTML += "<br><span style='color:green'>✔ Copiado al portapapeles</span>";
+});
+</script>
+
+
+
+
+
+
+
+
+
+<div id="escena" style="position: relative; min-height: 300vh;">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-subtitle">Invitación de boda</div>
+    <h1 class="hero-title">Bladimir & Yesenia</h1>
+    <div class="hero-date">14 de diciembre 2025</div>
+  </div>
+</section>
+
+<!-- HISTORIA -->
+<section class="section" id="historia">
+  <div class="section-inner">
+    <h2 class="titulo-casamos">¡Nos Casamos!</h2>
+
+    <img class="separator" 
+src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMTIwIDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xIDExSDEyMFMxOSAxMSAyNSAxMUMzMSAxMSAzNSAxMSAzOSAxMUM0MyAxMSA0NyAxMSA1MSAxMUM1NSAxMSA1OSAxMSA2MyAxMUM2NyAxMSA3MSAxMSA3NSAxMSIgIHN0cm9rZT0iI2NjOCIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L3N2Zz4=" />
+
+
+    <h2 class="section-title">Nuestra historia</h2>
+    <p class="texto">
+      Dios ha sido el centro de nuestra relación desde el primer día. Entre risas, oraciones,
+      música y tiempo juntos, Él fue tejiendo una historia que hoy se convierte en una promesa
+      para toda la vida. Con mucha alegría queremos compartir este paso tan importante contigo.
+    </p>
+
+    
+
+    <div class="versiculo-box">
+      "Por eso el hombre dejará a su padre y a su madre, y se unirá a su mujer, y serán una sola carne."
+      <br><b>Génesis 2:24</b>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTADOR -->
+<section class="section-alt" id="contador">
+  <div class="section-inner">
+
+    <img class="separator" 
+src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQwIiBoZWlnaHQ9IjMwIiB2aWV3Qm94PSIwIDAgMTQwIDMwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxsaW5lIHgxPSIwIiB5MT0iMTUiIHgyPSI2MCIgeTI9IjE1IiBzdHJva2U9IiNhYWEiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik02NyAxNUM2NyAxMSA3MSA4IDc1IDE1Qzc5IDIyIDgzIDExIDg3IDE1IiBzdHJva2U9IiNhYWEiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxsaW5lIHgxPSI4MCIgeTE9IjE1IiB4Mj0iMTQwIiB5Mj0iMTUiIHN0cm9rZT0iI2FhYSIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9zdmc+" />
+
+
+    <h2 class="section-title">Faltan</h2>
+    <p class="section-subtitle">Contando los días para celebrar juntos.</p>
+
+    <div class="contador">
+      <div class="cont-item"><div id="dias" class="cont-num">-</div>Días</div>
+      <div class="cont-item"><div id="horas" class="cont-num">-</div>Horas</div>
+      <div class="cont-item"><div id="minutos" class="cont-num">-</div>Min</div>
+      <div class="cont-item"><div id="segundos" class="cont-num">-</div>Seg</div>
+    </div>
+  </div>
+</section>
+
+<!-- CEREMONIA -->
+<section class="section" id="ceremonia">
+  <div class="section-inner">
+
+    <img class="separator" 
+src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjMwIiB2aWV3Qm94PSIwIDAgMTUwIDMwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjaXJjbGUgY3g9IjYwIiBjeT0iMTUiIHI9IjgiIHN0cm9rZT0iI2RkYSIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PGNpcmNsZSBjeD0iOTAiIGN5PSIxNSIgcj0iOCIgIHN0cm9rZT0iI2RkYSIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjAiIHkxPSIxNSIgeDI9IjUxIiB5Mj0iMTUiIHN0cm9rZT0iI2RkYSIgc3Ryb2tlLXdpZHRoPSIyIi8+PGxpbmUgeDE9Ijk5IiB5MT0iMTUiIHgyPSIxNTAiIHkyPSIxNSIgc3Ryb2tlPSIjZGRhIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4=" />
+
+
+    <h2 class="section-title">Ceremonia & Recepción</h2>
+
+    <img src="https://uploads.onecompiler.io/445r4svta/445r45x9w/Black%20and%20White%20Vintage%20Wedding%20Program%20(5).png"
+    class="marco-dorado"
+         style="width:100%;max-width:500px;border-radius:16px;margin-bottom:15px;">
+
+    <p class="texto"><b>Parroquia⛪:</b> San Juan Bautista</p>
+    <p class="texto"><b>Lugar📍:</b> Pimentel, Prov. Duarte</p>
+    
+    <button class="btn" onclick="window.open('https://maps.app.goo.gl/KUFxmny6jhMR1fwn6')">
+      Abrir en Google Maps
+    </button>
+
+    <img src="https://uploads.onecompiler.io/445r4svta/445r45x9w/MKV_0936.jpg"
+    class="marco-brillante"
+         style="width:100%;max-width:500px;border-radius:16px;margin-top:25px;">
+
+  </div>
+</section>
+
+<!-- UBICACIÓN IGLESIA -->
+<section class="section-alt" id="ubicacion">
+  <div class="section-inner">
+
+   <img class="separator"
+src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjUwIiB2aWV3Qm94PSIwIDAgMjAwIDUwIiBmaWxsPSJub25lIiBzdHJva2U9IiM3Nzc3NzciIHN0cm9rZS13aWR0aD0iMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTAgMjBDMzAgMTAgNDAgMzAgNjAgMjBDODAgMTAgOTAgMzAgMTEwIDIwIi8+PGNpcmNsZSBjeD0iNjAiIGN5PSIyMCIgcj0iNSIvPjxwYXRoIGQ9Ik0xOTAgMjBDMTcwIDEwIDE2MCAzMCAxNDAgMjBDMTIwIDEwIDExMCAzMCA5MCAyMCIvPjwvc3ZnPg==" />
+     
+    <p class="texto"> 📍 </p>
+    <h2 class="section-title">Ubicación Recepción</h2>
+
+    <p class="texto"> Av. Independencia, Pimentel, Prov. Duarte.</p>
+      <button class="btn" onclick="window.open('https://maps.app.goo.gl/zLPC5f2AuYUux3GXA')">
+      Abrir en Google Maps
+    </button>
+    
+
+
+  </div>
+</section>
+
+<!-- UBICACIÓN RECEPCIÓN -->
+<section class="section-alt" id="ubicacion2">
+  <div class="section-inner">
+
+ <!--   <h2 class="section-title">Ubicación Recepción</h2> -->
+
+ <!--   <p class="texto">
+      Av. Independencia, Pimentel, Prov. Duarte. </p> -->
+
+    
+
+  </div>
+</section>
+
+<section class="section-beige" id="vestimenta">
+  <div class="section-inner">
+
+    <img class="separator"
+    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjUwIiB2aWV3Qm94PSIwIDAgMjAwIDUwIiBmaWxsPSJub25lIiBzdHJva2U9IiM4YzhkNzkiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAsMjUgQzMwLDEwIDUwLDQwIDgwLDI1IEMxMTAsMTAgMTMwLDQwIDE2MCwyNSBDMTkwLDEwIDIxMCw0MCAyNDAsMjUiLz48Y2lyY2xlIGN4PSI4MCIgY3k9IjI1IiByPSI0IiBmaWxsPSIjOGM4ZDc5Ii8+PGNpcmNsZSBjeD0iMTYwIiBjeT0iMjUiIHI9IjQiIGZpbGw9IiM4YzhkNzkiLz48L3N2Zz4=" />
+
+    <h2 class="section-title">Código de Vestimenta</h2>
+
+    <p class="texto">
+      Para este día tan especial deseamos mantener un ambiente armonioso y elegante.
+      El <b>color blanco está reservado exclusivamente para la novia</b>, por lo que te pedimos
+      amablemente evitar vestir de blanco o tonos muy similares.<br><br>
+      Agradecemos tu comprensión y tu cariño al acompañarnos luciendo tus mejores colores.
+    </p>
+
+  </div>
+</section>
+
+
+<!-- FOTO EXTRA -->
+<section class="section">
+  <div class="section-inner">
+    
+    <img src="https://uploads.onecompiler.io/445r4svta/445r45x9w/MKV_0875.jpg"
+    class="marco-clasico"
+         style="width:100%;max-width:500px;border-radius:16px;">
+  </div>
+</section>
+
+<!-- CUENTAS -->
+<section class="section-alt" id="rsvp">
+  <div class="section-inner">
+
+    <img class="separator"
+src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTUwIDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIHN0cm9rZT0iI2Q1YzM3MCIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIiBkPSJNMCAyMEg2MEM3MCAxMCA4MCAyMCA5MCAyMEgxNTAiLz48L3N2Zz4=" />
+
+
+    <h2 class="section-title">No habrá lista de regalos</h2>
+    <p class="texto">
+      Si es de tu agrado y quieres hacernos una donación económica, aquí están nuestras cuentas:
+    </p>
+
+    <p class="texto"><b>BANRESERVAS</b> — Yesenia Serrano<br>👉 9604886695</p>
+    <p class="texto"><b>POPULAR</b> — Bladimir Rodríguez<br>👉 807867833</p>
+
+  </div>
+</section>
+
+<!-- CONFIRMAR -->
+<section class="section">
+  <div class="section-inner">
+
+    <img class="separator"
+src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjMwIiB2aWV3Qm94PSIwIDAgMTUwIDMwIiBmaWxsPSJub25lIiBzdHJva2U9IiM4ODgiIHN0cm9rZS13aWR0aD0iMS41IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0wIDE1SDUwQzcwIDE1IDgwIDE1IDEwMCAxNUMxMjAgMTUgMTMwIDE1IDE1MCAxNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTUwIDE1QzYwIDEwIDY1IDUgNzUgNyIgc3Ryb2tlPSIjODg4Ii8+PHBhdGggZD0iTTEwMCAxNUM5MCAxMCA4NSA1IDc1IDciIHN0cm9rZT0iIzg4OCIvPjwvc3ZnPg==" />
+
+
+    <h2 class="section-title">Confirmar asistencia</h2>
+    <p class="texto">Tu presencia será una bendición para nosotros.</p>
+
+    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSe4CmfieuJ29z4bWOevYor7qniarf9kRwiYB7mU7MB3ahFTtA/viewform?usp=dialog" target="_blank">
+      Confirmar asistencia
+    </a>
+
+  </div>
+</section>
+
+<section class="final-epico">
+  <h3>Gracias por ser parte de este día tan especial</h3>
+  <p>¡Te Esperamos!.</p>
+</section>
+
+
+<footer>
+  Bladimir & Yesenia · 14 de diciembre 2025
+</footer>
+
+<script>
+
+
+
+// Cambiamos exactamente a las 00:00 del 14 diciembre 2025
+const fechaBoda = new Date(2025, 11, 14, 0, 0, 0).getTime();
+
+function actualizarContador() {
+  const ahora = new Date().getTime();
+  let diff = fechaBoda - ahora;
+
+  const unDia = 86400000;
+  const unaHora = 3600000;
+  const unMin = 60000;
+
+  const dias = Math.floor(diff / unDia);
+  const horas = Math.floor((diff % unDia) / unaHora);
+  const min = Math.floor((diff % unaHora) / unMin);
+  const seg = Math.floor((diff % unMin) / 1000);
+
+  // 🎉 Cuando llega el 14 a las 00:00 EXACTAS
+  if (ahora >= fechaBoda) {
+
+    // Cambiar textos
+    const titulo = document.querySelector("#contador .section-title");
+    titulo.innerText = "HOY ES EL GRAN DÍA! 💍✨";
+    titulo.classList.add("gran-dia", "brillo");
+
+    const subtitulo = document.querySelector("#contador .section-subtitle");
+    subtitulo.innerText = "El amor se celebra hoy.";
+    subtitulo.classList.add("gran-dia");
+
+    // Fondo dorado
+    const seccion = document.querySelector("#contador");
+    seccion.classList.add("fondo-dorado");
+
+    // Ocultar contador con fade-out
+    const contadorBox = document.querySelector(".contador");
+    contadorBox.classList.add("fade-out");
+
+    // Lanzar pétalos dorados
+    lanzarPetalos();
+
+    return;
+  }
+
+  // Si aún no llega el día
+  document.getElementById("dias").innerText = dias;
+  document.getElementById("horas").innerText = horas;
+  document.getElementById("minutos").innerText = min;
+  document.getElementById("segundos").innerText = seg;
+}
+
+
+
+// Ejecutar y actualizar cada segundo
+actualizarContador();
+setInterval(actualizarContador, 1000);
+
+function lanzarPetalos() {
+  for (let i = 0; i < 20; i++) {   // cantidad de pétalos
+    const petalo = document.createElement("div");
+    petalo.classList.add("petalo");
+
+    // Posición X inicial aleatoria
+    petalo.style.left = Math.random() * 100 + "vw";
+
+    // Duración aleatoria
+    const dur = 4 + Math.random() * 3;
+    petalo.style.animationDuration = dur + "s";
+
+    document.body.appendChild(petalo);
+
+    // Remover pétalo cuando termine
+    setTimeout(() => {
+      petalo.remove();
+    }, dur * 1000);
+  }
+}
+
+// Mostrar nombre del invitado desde la URL
+const params = new URLSearchParams(window.location.search);
+const invitado = params.get("para");
+
+if (invitado) {
+  const brand = document.querySelector(".brand");
+  brand.innerHTML += `<div style="font-size:14px; color:#c5a46d;">Invitado: ${invitado}</div>`;
+}
+
+</script>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", async function () {
+  const audio = document.getElementById("musica");
+  const btn = document.getElementById("btnMusica");
+
+  // volumen suave
+  audio.volume = 0.85;
+
+  // Detectar si es iPhone/iPad
+  const esIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  if (!esIOS) {
+    // 👉 En Android/Windows/Mac: AUTOPLAY
+    try {
+      await audio.play();
+      btn.textContent = "⏸️";
+    } catch (err) {
+      console.log("Autoplay bloqueado, esperando interacción:", err);
+    }
+  } else {
+    // 👉 En iPhone/iPad se requiere interacción humana
+    console.log("iOS detectado: autoplay desactivado.");
+    btn.textContent = "▶️";
+  }
+
+  // Botón para reproducir o pausar
+  btn.addEventListener("click", async () => {
+    try {
+      if (audio.paused) {
+        await audio.play();
+        btn.textContent = "⏸️";
+      } else {
+        audio.pause();
+        btn.textContent = "▶️";
+      }
+    } catch (err) {
+      alert("En este dispositivo debes subir el volumen y quitar el modo silencio.");
+      console.log(err);
+    }
+  });
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const hint = document.getElementById("hintMusica");
+  const btn = document.getElementById("btnMusica");
+
+  if (!hint || !btn) return;
+
+  // función para esconder la pista
+  const ocultarHint = () => {
+    if (!hint) return;
+    hint.classList.add("fade-out-hint");
+    // la removemos del DOM después de la animación
+    setTimeout(() => {
+      if (hint && hint.parentNode) {
+        hint.parentNode.removeChild(hint);
+      }
+    }, 450);
+  };
+
+  // Si el usuario toca el botón de música, se esconde la flecha
+  btn.addEventListener("click", ocultarHint);
+
+  // También se esconde sola después de unos segundos
+  setTimeout(ocultarHint, 9000); // 9 segundos
+});
+</script>
+
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const modal = document.getElementById("modalInvitado");
+  const btnCompartir = document.getElementById("btnCompartir");
+  const btnConfirmar = document.querySelector(".modal-confirm");
+  const btnCancelar = document.querySelector(".modal-cancel");
+  const inputNombre = document.getElementById("inputNombre");
+  const resultado = document.getElementById("resultadoLink");
+
+  // Detectar si el enlace ya viene personalizado
+  const params = new URLSearchParams(window.location.search);
+  const nombre = params.get("para");
+
+  if (nombre) {
+    // Ocultar botón compartir en enlaces personalizados
+    btnCompartir.style.display = "none";
+  }
+
+  // Abrir modal
+  btnCompartir.addEventListener("click", () => {
+    modal.style.display = "flex";
+    inputNombre.value = "";
+    resultado.innerHTML = "";
+  });
+
+  // Cerrar modal
+  btnCancelar.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  // Generar enlace
+  btnConfirmar.addEventListener("click", () => {
+    const nombre = inputNombre.value.trim();
+
+    if (!nombre) {
+      alert("Por favor escribe un nombre.");
+      return;
+    }
+
+    const base = window.location.origin + window.location.pathname;
+    const encoded = encodeURIComponent(nombre);
+    const link = `${base}?para=${encoded}`;
+
+    resultado.innerHTML = `Enlace generado:<br><b>${link}</b>`;
+
+    // Copiar
+    navigator.clipboard.writeText(link);
+
+    resultado.innerHTML += "<br><span style='color:green'>✔ Copiado al portapapeles</span>";
+  });
+
+});
+</script>
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  let velocidad = 0.97; // ⭐ velocidad real (0.3 = muy lento, 1.0 = rápido)
+  let activo = true;
+  let timer = null;
+
+  function autoScroll() {
+    if (!activo) return;
+
+    // movemos 1px pero no en cada frame sino según la velocidad
+    window.scrollBy(0, 1);
+
+    const limite = document.documentElement.scrollHeight - window.innerHeight;
+
+    if (window.scrollY >= limite - 2) {
+      activo = false;
+      return;
+    }
+
+    // tiempo entre pasos: si velocidad es baja → más lento
+    setTimeout(() => {
+      requestAnimationFrame(autoScroll);
+    }, 1000 * (1 - velocidad));
+  }
+
+  function pausar() {
+    activo = false;
+    clearTimeout(timer);
+
+    timer = setTimeout(() => {
+      activo = true;
+      requestAnimationFrame(autoScroll);
+    }, 3000);
+  }
+
+  ["wheel","touchstart","touchmove","mousedown","keydown"].forEach(ev => {
+    document.addEventListener(ev, pausar, {passive: true});
+  });
+
+  requestAnimationFrame(autoScroll);
+
+});
+</script>
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
